@@ -12,6 +12,7 @@ console.log(validation);
 console.log(reset);
 console.log('--------------------');
 
+//------------------Selections----------------
 pierre.addEventListener('click', () => {
 
     pierre.innerHTML = '0';
@@ -44,148 +45,405 @@ ciseaux.addEventListener('click', () => {
     feuille.classList.remove('borderValide');
 })
 
+//---------------------Historique-------------------------------
+let historique = document.getElementById('historique');
+console.log(historique);
 
-//---------------------MainSound-------------------------------
+let resultP = document.querySelector('.resultP');
+let resultF = document.querySelector('.resultF');
+let resultC = document.querySelector('.resultC');
 
+let resultP1 = document.querySelector('.resultP1');
+let resultF1 = document.querySelector('.resultF1');
+let resultC1 = document.querySelector('.resultC1');
 
-//----------------------------------------------------
-let player = 0;
-let ia = 0;
-
-let score = document.querySelector('.score');
-
-score.innerHTML = (player + ' - ' + ia);
+//-----------------------ScoreGame-----------------------------
+let player1 = 0;
+let player2 = 0;
 //----------------------TextWIN------------------------------
 let win = document.getElementById('win');
-//----------------------TextDawn------------------------------
+//---------------------TextDawn------------------------------
 let dawn = document.getElementById('dawn');
-//----------------------TextLoose------------------------------
+//--------------------TextLoose------------------------------
 let loose = document.getElementById('loose');
-//----------------------PeachWIN------------------------------
+//---------------------PeachWIN------------------------------
 let peach = document.getElementById('peach');
-console.log(peach);
 //----------------------BrowerJrLoose------------------------
 let browerJr = document.getElementById('browerJr');
-console.log(browerJr);
 //-----------------------Koopa--------------------------------
 let koopa = document.getElementById('koopa');
-console.log(koopa);
+
+//--------------------GAME'CLICK'-----------------------------
 
 validation.addEventListener('click', () => {
     let computer = Math.floor(Math.random() * 3); // 0, 1 or 2
-    
+
     console.log(computer);
     console.log(pierre.innerText);
     console.log(feuille.innerText);
     console.log(ciseaux.innerText);
 
     //pierre--------------------------
+
     if (pierre.innerText) {
 
         if ((pierre.innerText == 0 && computer == 2)) {
-            setTimeout(()=>{
-            peach.style.bottom="12vw";},0)
-            setTimeout(()=>{
-                peach.style.bottom="-35vw"},2500)
-                setTimeout(()=>{
-                    win.style.bottom="12vw";},500)
-                    setTimeout(()=>{
-                        win.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                peach.style.bottom = "12vw";
+            }, 0)
+            setTimeout(() => {
+                peach.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                win.style.bottom = "12vw";
+            }, 500)
+            setTimeout(() => {
+                win.style.bottom = "-35vw"
+            }, 2500)
+
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
+            player1 = player1 + 1;
+            document.getElementById('player1').innerHTML = player1;
+
         } else if ((pierre.innerText == 0 && computer == 1)) {
-            setTimeout(()=>{
-                browerJr.style.bottom="20vw";},0)
-                setTimeout(()=>{
-                    browerJr.style.bottom="-35vw"},2500)
-                    setTimeout(()=>{
-                        loose.style.bottom="10vw";},0)
-                        setTimeout(()=>{
-                            loose.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                browerJr.style.bottom = "20vw";
+            }, 0)
+            setTimeout(() => {
+                browerJr.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                loose.style.bottom = "10vw";
+            }, 0)
+            setTimeout(() => {
+                loose.style.bottom = "-35vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "100%";
+            }, 0)
+            //------------------HistoriqueIA
+            player2 = player2 + 1;
+            document.getElementById('player2').innerHTML = player2
+
         } else if ((pierre.innerText == 0 && computer == 0)) {
-            setTimeout(()=>{
-                koopa.style.left="40vw";},0)
-                setTimeout(()=>{
-                    koopa.style.left="-40vw"},2500)
-                    setTimeout(()=>{
-                        dawn.style.right="29vw";},0)
-                        setTimeout(()=>{
-                            dawn.style.right="-50vw"},2500)
+            setTimeout(() => {
+                koopa.style.left = "40vw";
+            }, 0)
+            setTimeout(() => {
+                koopa.style.left = "-40vw"
+            }, 2500)
+            setTimeout(() => {
+                dawn.style.right = "29vw";
+            }, 0)
+            setTimeout(() => {
+                dawn.style.right = "-50vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
         }
         else alert('none P')
     }
 })
 
+//feuille--------------------------
+
 validation.addEventListener('click', () => {
     var computer = Math.floor(Math.random() * 3); // 0, 1 or 2
-    //feuille--------------------------
     if (feuille.innerText) {
 
         if ((feuille.innerText == 1 && computer == 2)) {
-            setTimeout(()=>{
-                browerJr.style.bottom="20vw";},0)
-                setTimeout(()=>{
-                    browerJr.style.bottom="-35vw"},2500)
-                    setTimeout(()=>{
-                        loose.style.bottom="10vw";},0)
-                        setTimeout(()=>{
-                            loose.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                browerJr.style.bottom = "20vw";
+            }, 0)
+            setTimeout(() => {
+                browerJr.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                loose.style.bottom = "10vw";
+            }, 0)
+            setTimeout(() => {
+                loose.style.bottom = "-35vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "100%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
+            player2 = player2 + 1;
+            document.getElementById('player2').innerHTML = player2
         } else if ((feuille.innerText == 1 && computer == 1)) {
-            setTimeout(()=>{
-                koopa.style.left="40vw";},0)
-                setTimeout(()=>{
-                    koopa.style.left="-40vw"},2500)
-                    setTimeout(()=>{
-                        dawn.style.right="29vw";},0)
-                        setTimeout(()=>{
-                            dawn.style.right="-50vw"},2500)
+            setTimeout(() => {
+                koopa.style.left = "40vw";
+            }, 0)
+            setTimeout(() => {
+                koopa.style.left = "-40vw"
+            }, 2500)
+            setTimeout(() => {
+                dawn.style.right = "29vw";
+            }, 0)
+            setTimeout(() => {
+                dawn.style.right = "-50vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "100%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "100%";
+            }, 0)
+            //------------------HistoriqueIA
         } else if ((feuille.innerText == 1 && computer == 0)) {
-            setTimeout(()=>{
-                peach.style.bottom="12vw";},0)
-                setTimeout(()=>{
-                    peach.style.bottom="-35vw"},2500)
-                    setTimeout(()=>{
-                        win.style.bottom="12vw";},500)
-                        setTimeout(()=>{
-                            win.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                peach.style.bottom = "12vw";
+            }, 0)
+            setTimeout(() => {
+                peach.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                win.style.bottom = "12vw";
+            }, 500)
+            setTimeout(() => {
+                win.style.bottom = "-35vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "100%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
+            player1 = player1 + 1;
+            document.getElementById('player1').innerHTML = player1
         }
         else alert('none P')
     }
 })
+
+//ciseaux--------------------------
 
 validation.addEventListener('click', () => {
     var computer = Math.floor(Math.random() * 3); // 0, 1 or 2
-    //ciseaux--------------------------
     if (ciseaux.innerText) {
 
         if ((ciseaux.innerText == 2 && computer == 2)) {
-            setTimeout(()=>{
-                koopa.style.left="40vw";},0)
-                setTimeout(()=>{
-                    koopa.style.left="-40vw"},2500)
-                    setTimeout(()=>{
-                        dawn.style.right="29vw";},0)
-                        setTimeout(()=>{
-                            dawn.style.right="-50vw"},2500)
+            setTimeout(() => {
+                koopa.style.left = "40vw";
+            }, 0)
+            setTimeout(() => {
+                koopa.style.left = "-40vw"
+            }, 2500)
+            setTimeout(() => {
+                dawn.style.right = "29vw";
+            }, 0)
+            setTimeout(() => {
+                dawn.style.right = "-50vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
         } else if ((ciseaux.innerText == 2 && computer == 1)) {
-            setTimeout(()=>{
-                peach.style.bottom="12vw";},0)
-                setTimeout(()=>{
-                    peach.style.bottom="-35vw"},2500)
-                    setTimeout(()=>{
-                        win.style.bottom="12vw";},500)
-                        setTimeout(()=>{
-                            win.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                peach.style.bottom = "12vw";
+            }, 0)
+            setTimeout(() => {
+                peach.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                win.style.bottom = "12vw";
+            }, 500)
+            setTimeout(() => {
+                win.style.bottom = "-35vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "100%";
+            }, 0)
+            //------------------HistoriqueIA
+            player1 = player1 + 1;
+            document.getElementById('player1').innerHTML = player1
         } else if ((ciseaux.innerText == 2 && computer == 0)) {
-            setTimeout(()=>{
-                browerJr.style.bottom="20vw";},0)
-                setTimeout(()=>{
-                    browerJr.style.bottom="-35vw"},2500)
-                    setTimeout(()=>{
-                        loose.style.bottom="10vw";},0)
-                        setTimeout(()=>{
-                            loose.style.bottom="-35vw"},2500)
+            setTimeout(() => {
+                browerJr.style.bottom = "20vw";
+            }, 0)
+            setTimeout(() => {
+                browerJr.style.bottom = "-35vw"
+            }, 2500)
+            setTimeout(() => {
+                loose.style.bottom = "10vw";
+            }, 0)
+            setTimeout(() => {
+                loose.style.bottom = "-35vw"
+            }, 2500)
+            //------------------Historique
+            setTimeout(() => {
+                resultP.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultC.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultF.style.opacity = "0%";
+            }, 0)
+            //------------------Historique
+            //------------------HistoriqueIA
+            setTimeout(() => {
+                resultP1.style.opacity = "100%";
+            }, 0)
+            setTimeout(() => {
+                resultC1.style.opacity = "0%";
+            }, 0)
+            setTimeout(() => {
+                resultF1.style.opacity = "0%";
+            }, 0)
+            //------------------HistoriqueIA
+            player2 = player2 + 1;
+            document.getElementById('player2').innerHTML = player2
         }
         else alert('none P')
     }
 })
 
-    //--------------------Score
+//--------------------Historique--------
+
+

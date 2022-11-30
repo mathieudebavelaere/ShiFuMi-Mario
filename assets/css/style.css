@@ -23,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     font-size: 200%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgba(245, 245, 245, 0);
@@ -31,13 +32,17 @@ body {
     height: 100px;
     width: 100%;
 }
-
+.perso {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
 #footer {
     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    color: rgb(255, 255, 255);   
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     font-size: 20px;
@@ -45,6 +50,14 @@ body {
     width: 100%;
     background: url('../img/footer.png');
     background-size: 100% 100%;
+}
+
+.code {
+    background-color: rgba(153, 117, 19, 0.589);
+    padding: 3px;
+    border-radius: 5px;
+    height: 40%;
+    margin: 10px;
 }
 
 .fD {
@@ -55,6 +68,7 @@ body {
 
 /*--------------------------------------------*/
 .Gboite {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +84,7 @@ body {
 .score {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 3%;
     height: 50px;
     width: 50%;
@@ -79,6 +93,10 @@ body {
     background-color: #4987b0ae;
     border-radius: 10px;
     border: solid rgb(255, 255, 255) 2px;
+}
+
+#cloud {
+    height: 180%;
 }
 
 /*--------------------------------------------*/
@@ -180,20 +198,13 @@ body {
 }
 
 /*--------------------------------------------*/
-#historique {
-    margin: 10px;
-    border-radius: 10px;
-    height: 50px;
-    width: 430px;
-    border: solid rgb(255, 255, 255) 2px;
-}
-
-/*--------------------------------------------*/
 .border {
+
     border: solid rgb(255, 255, 255) 5px;
 }
 
 .borderValide {
+
     border: solid rgb(219, 179, 58) 5px;
 }
 
@@ -203,7 +214,7 @@ body {
     position: fixed;
     z-index: 1;
     height: 60vh;
-    bottom: -35vw;
+    bottom: -60vw;
     /* Centrage horizontal et vertical */
     display: flex;
     align-items: center;
@@ -252,6 +263,7 @@ body {
     transition: left 2s;
     border-radius: 5%;
 }
+
 /*-------win---------*/
 #win {
     position: fixed;
@@ -286,6 +298,7 @@ body {
     transition: right 2s;
     border-radius: 5%;
 }
+
 /*-------loose---------*/
 #loose {
     position: fixed;
@@ -301,5 +314,73 @@ body {
     opacity: 1;
     transition: bottom 2s;
     border-radius: 5%;
+}
+/*--------------------------------------------*/
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 430px;
+    height: 20px;
+}
+/*--------------------------------------------*/
+#historique {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 100px;
+    width: 430px;
+}
+.boiteH1,
+.boiteH2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 215px;
+    position: relative;
+}
+.resultP {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+.resultF {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+.resultC {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+
+.resultP1 {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+.resultF1 {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+.resultC1 {
+    opacity: 0%; 
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
 }
 

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------IconDansLaBarNav------------->
+    <link rel="shortcut icon" href="./assets/img/cloud.png" type="image/x-icon">
+    <!----------FinDeL'IconDansLaBarNav----------->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>ShiFuMi</title>
+    <title>ShiFuMi Paper</title>
 </head>
 
 <body>
@@ -14,18 +17,24 @@
 
     <div id="fondEcran">
         <nav id="nav">
-            <h1>ShiFuMi</h1>
+            <img src=".//assets/img/title.png" alt="ShiFuMi">
+            
         </nav>
+        <p class="perso">@Debavelaere Mathieu</p>
         <div class="fD">
             <div class="Gboite">
-<img id="peach" src="./assets/img/peach.png" alt="Peach"></img>
-<img id="browerJr" src="./assets/img/BowserJr.png" alt="brower junior"></img>
-<img id="koopa" src="./assets/img/koopa.png" alt="koopa">
-<img id="win" src="./assets/img/win.png" alt="winner" >
-<img id="dawn" src="./assets/img/dawn.png" alt="égaliter">
-<img id="loose" src="./assets/img/loose.png" alt="loose">
 
-                <div class="score"></div>
+                <img id="peach" src="./assets/img/peach.png" alt="Peach"></img>
+                <img id="browerJr" src="./assets/img/BowserJr.png" alt="brower junior"></img>
+                <img id="koopa" src="./assets/img/koopa.png" alt="koopa">
+                <img id="win" src="./assets/img/win.png" alt="winner">
+                <img id="dawn" src="./assets/img/dawn.png" alt="égaliter">
+                <img id="loose" src="./assets/img/loose.png" alt="loose">
+
+                <div class="score">
+                    <p id="player1">0</p><img id="cloud" src="./assets/img/cloud.png" alt="cloud">
+                    <p id="player2"> 0</p>
+                </div>
 
                 <div class="boite">
                     <div id="pierre" class="border"></div>
@@ -36,15 +45,36 @@
                     <div class="valider">Valider</div>
                     <a href="./index.html" class="reset">Reset</a>
                 </div>
-                <div id="historique"></div>
+
+                <div class="player">
+                    <img src="./assets/img/mario.png" alt="title mario">
+                    <img src="./assets/img/browser.png" alt="title browser">
+                </div>
+
+                <div id="historique">
+                    <div class="boiteH1">
+                        <img class="resultP" src="./assets/img/pierre.png">
+                        <img class="resultF" src="./assets/img/feuille.png">
+                        <img class="resultC" src="./assets/img/ciseaux.png">
+                    </div>
+                    <span class="boiteH2">
+                        <img class="resultP1" src="./assets/img/pierre.png">
+                        <img class="resultF1" src="./assets/img/feuille.png">
+                        <img class="resultC1" src="./assets/img/ciseaux.png">
+                    </span>
+                </div>
+
             </div>
         </div>
 
     </div>
-    <!---
-   <footer id="footer">
-   </footer>
-   -->
+
+    <footer id="footer">
+        <img class="code" src="./assets/img/html5.png" alt="html5">
+        <img class="code" src="./assets/img/css3.png" alt="css3">
+        <img class="code" src="./assets/img/js.png" alt="javascript">
+    </footer>
+
     <script src="/assets/js/script.js"></script>
 </body>
 
