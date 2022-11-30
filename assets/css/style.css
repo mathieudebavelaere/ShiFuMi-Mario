@@ -1,0 +1,246 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------*/
+#fondEcran {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background: url('../img/fondEcran.png');
+    background-size: 100% 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(245, 245, 245, 0);
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+}
+
+#footer {
+    height: 86px;
+    width: 100%;
+    background: url('../img/footer.png');
+    background-size: 100% 100%;
+}
+
+.fD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------*/
+.Gboite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55%;
+    width: 40%;
+    border-radius: 20px;
+    margin: 3%;
+    border: solid rgb(255, 255, 255) 5px;
+    background-color: rgba(243, 243, 243, 0.269);
+}
+
+/*--------------------------------------------*/
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+    height: 50px;
+    width: 50%;
+    font-size: 200%;
+    color: #ffffff;
+    background-color: #4987b0ae;
+    border-radius: 10px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+/*--------------------------------------------*/
+.boite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10%;
+    width: 100%;
+}
+
+#pierre {
+    color: #ffffff;
+    font-size: 0%;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background: url('../img/pierre.png');
+    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+#pierre:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#feuille {
+    color: #ffffff;
+    font-size: 0%;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background: url('../img/feuille.png');
+    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+#feuille:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#ciseaux {
+    color: #ffffff;
+    font-size: 0%;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background: url('../img/ciseaux.png');
+    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+#ciseaux:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*--------------------------------------------*/
+#bouton {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.valider,
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    height: 50px;
+    width: 200px;
+    font-size: 200%;
+    color: #ffffff;
+    background-color: #4987b0ae;
+    border-radius: 10px;
+    border: solid rgb(255, 255, 255) 2px;
+    text-decoration: none;
+}
+
+.valider:hover {
+    background-color: #224f6dae;
+}
+
+.reset:hover {
+    background-color: #224f6dae;
+}
+
+/*--------------------------------------------*/
+#historique {
+    margin: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 430px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+/*--------------------------------------------*/
+.border {
+    border: solid rgb(255, 255, 255) 5px;
+}
+
+.borderValide {
+    border: solid rgb(219, 179, 58) 5px;
+}
+
+/*-------Peach----------*/
+
+#peach {
+    position: fixed;
+    z-index: 1;
+    height: 60vh;
+    bottom: -35vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: bottom 2s;
+    border-radius: 5%;
+}
+
+
+/*-------BrowerJr---------*/
+
+#browerJr {
+    position: fixed;
+    z-index: 1;
+    height: 40vh;
+    bottom: -35vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: bottom 2s;
+    border-radius: 5%;
+}
+
+/*-------koopa---------*/
+
+#koopa {
+    position: fixed;
+    z-index: 1;
+    height: 40vh;
+    bottom: -1vw;
+    left: -20vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: left 2s;
+    border-radius: 5%;
+}
