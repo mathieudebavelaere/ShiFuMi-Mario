@@ -33,6 +33,14 @@ body {
 }
 
 #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);   
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 20px;
     height: 86px;
     width: 100%;
     background: url('../img/footer.png');
@@ -244,3 +252,54 @@ body {
     transition: left 2s;
     border-radius: 5%;
 }
+/*-------win---------*/
+#win {
+    position: fixed;
+    z-index: 1;
+    height: 30vh;
+    bottom: -35vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: bottom 2s;
+    border-radius: 5%;
+}
+
+/*-------dawn---------*/
+#dawn {
+    position: fixed;
+    z-index: 1;
+    height: 30vh;
+    bottom: 25vw;
+    right: -50vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: right 2s;
+    border-radius: 5%;
+}
+/*-------loose---------*/
+#loose {
+    position: fixed;
+    z-index: 1;
+    height: 25vh;
+    bottom: -35vw;
+    /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Transition CSS sur l'opacité */
+    opacity: 1;
+    transition: bottom 2s;
+    border-radius: 5%;
+}
+

@@ -44,6 +44,10 @@ ciseaux.addEventListener('click', () => {
     feuille.classList.remove('borderValide');
 })
 
+
+//---------------------MainSound-------------------------------
+
+
 //----------------------------------------------------
 let player = 0;
 let ia = 0;
@@ -51,6 +55,12 @@ let ia = 0;
 let score = document.querySelector('.score');
 
 score.innerHTML = (player + ' - ' + ia);
+//----------------------TextWIN------------------------------
+let win = document.getElementById('win');
+//----------------------TextDawn------------------------------
+let dawn = document.getElementById('dawn');
+//----------------------TextLoose------------------------------
+let loose = document.getElementById('loose');
 //----------------------PeachWIN------------------------------
 let peach = document.getElementById('peach');
 console.log(peach);
@@ -74,19 +84,31 @@ validation.addEventListener('click', () => {
 
         if ((pierre.innerText == 0 && computer == 2)) {
             setTimeout(()=>{
-            peach.style.bottom="17vw";},0)
+            peach.style.bottom="12vw";},0)
             setTimeout(()=>{
                 peach.style.bottom="-35vw"},2500)
+                setTimeout(()=>{
+                    win.style.bottom="12vw";},500)
+                    setTimeout(()=>{
+                        win.style.bottom="-35vw"},2500)
         } else if ((pierre.innerText == 0 && computer == 1)) {
             setTimeout(()=>{
                 browerJr.style.bottom="20vw";},0)
                 setTimeout(()=>{
                     browerJr.style.bottom="-35vw"},2500)
+                    setTimeout(()=>{
+                        loose.style.bottom="10vw";},0)
+                        setTimeout(()=>{
+                            loose.style.bottom="-35vw"},2500)
         } else if ((pierre.innerText == 0 && computer == 0)) {
             setTimeout(()=>{
                 koopa.style.left="40vw";},0)
                 setTimeout(()=>{
                     koopa.style.left="-40vw"},2500)
+                    setTimeout(()=>{
+                        dawn.style.right="29vw";},0)
+                        setTimeout(()=>{
+                            dawn.style.right="-50vw"},2500)
         }
         else alert('none P')
     }
@@ -102,16 +124,28 @@ validation.addEventListener('click', () => {
                 browerJr.style.bottom="20vw";},0)
                 setTimeout(()=>{
                     browerJr.style.bottom="-35vw"},2500)
+                    setTimeout(()=>{
+                        loose.style.bottom="10vw";},0)
+                        setTimeout(()=>{
+                            loose.style.bottom="-35vw"},2500)
         } else if ((feuille.innerText == 1 && computer == 1)) {
             setTimeout(()=>{
                 koopa.style.left="40vw";},0)
                 setTimeout(()=>{
                     koopa.style.left="-40vw"},2500)
+                    setTimeout(()=>{
+                        dawn.style.right="29vw";},0)
+                        setTimeout(()=>{
+                            dawn.style.right="-50vw"},2500)
         } else if ((feuille.innerText == 1 && computer == 0)) {
             setTimeout(()=>{
-                peach.style.bottom="17vw";},0)
+                peach.style.bottom="12vw";},0)
                 setTimeout(()=>{
                     peach.style.bottom="-35vw"},2500)
+                    setTimeout(()=>{
+                        win.style.bottom="12vw";},500)
+                        setTimeout(()=>{
+                            win.style.bottom="-35vw"},2500)
         }
         else alert('none P')
     }
@@ -127,16 +161,28 @@ validation.addEventListener('click', () => {
                 koopa.style.left="40vw";},0)
                 setTimeout(()=>{
                     koopa.style.left="-40vw"},2500)
+                    setTimeout(()=>{
+                        dawn.style.right="29vw";},0)
+                        setTimeout(()=>{
+                            dawn.style.right="-50vw"},2500)
         } else if ((ciseaux.innerText == 2 && computer == 1)) {
             setTimeout(()=>{
-                peach.style.bottom="17vw";},0)
+                peach.style.bottom="12vw";},0)
                 setTimeout(()=>{
                     peach.style.bottom="-35vw"},2500)
+                    setTimeout(()=>{
+                        win.style.bottom="12vw";},500)
+                        setTimeout(()=>{
+                            win.style.bottom="-35vw"},2500)
         } else if ((ciseaux.innerText == 2 && computer == 0)) {
             setTimeout(()=>{
                 browerJr.style.bottom="20vw";},0)
                 setTimeout(()=>{
                     browerJr.style.bottom="-35vw"},2500)
+                    setTimeout(()=>{
+                        loose.style.bottom="10vw";},0)
+                        setTimeout(()=>{
+                            loose.style.bottom="-35vw"},2500)
         }
         else alert('none P')
     }
