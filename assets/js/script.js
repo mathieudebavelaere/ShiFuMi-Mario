@@ -92,13 +92,13 @@ validation.addEventListener('click', () => {
                 peach.style.bottom = "12vw";
             }, 0)
             setTimeout(() => {
-                peach.style.bottom = "-35vw"
+                peach.style.bottom = "-60vw"
             }, 2500)
             setTimeout(() => {
                 win.style.bottom = "12vw";
             }, 500)
             setTimeout(() => {
-                win.style.bottom = "-35vw"
+                win.style.bottom = "-60vw"
             }, 2500)
 
             //------------------Historique
@@ -169,13 +169,13 @@ validation.addEventListener('click', () => {
                 koopa.style.left = "40vw";
             }, 0)
             setTimeout(() => {
-                koopa.style.left = "-40vw"
+                koopa.style.left = "-60vw"
             }, 2500)
             setTimeout(() => {
                 dawn.style.right = "29vw";
             }, 0)
             setTimeout(() => {
-                dawn.style.right = "-50vw"
+                dawn.style.right = "-60vw"
             }, 2500)
             //------------------Historique
             setTimeout(() => {
@@ -252,13 +252,13 @@ validation.addEventListener('click', () => {
                 koopa.style.left = "40vw";
             }, 0)
             setTimeout(() => {
-                koopa.style.left = "-40vw"
+                koopa.style.left = "-60vw"
             }, 2500)
             setTimeout(() => {
                 dawn.style.right = "29vw";
             }, 0)
             setTimeout(() => {
-                dawn.style.right = "-50vw"
+                dawn.style.right = "-60vw"
             }, 2500)
             //------------------Historique
             setTimeout(() => {
@@ -287,13 +287,13 @@ validation.addEventListener('click', () => {
                 peach.style.bottom = "12vw";
             }, 0)
             setTimeout(() => {
-                peach.style.bottom = "-35vw"
+                peach.style.bottom = "-60vw"
             }, 2500)
             setTimeout(() => {
                 win.style.bottom = "12vw";
             }, 500)
             setTimeout(() => {
-                win.style.bottom = "-35vw"
+                win.style.bottom = "-60vw"
             }, 2500)
             //------------------Historique
             setTimeout(() => {
@@ -335,13 +335,13 @@ validation.addEventListener('click', () => {
                 koopa.style.left = "40vw";
             }, 0)
             setTimeout(() => {
-                koopa.style.left = "-40vw"
+                koopa.style.left = "-60vw"
             }, 2500)
             setTimeout(() => {
                 dawn.style.right = "29vw";
             }, 0)
             setTimeout(() => {
-                dawn.style.right = "-50vw"
+                dawn.style.right = "-60vw"
             }, 2500)
             //------------------Historique
             setTimeout(() => {
@@ -370,13 +370,13 @@ validation.addEventListener('click', () => {
                 peach.style.bottom = "12vw";
             }, 0)
             setTimeout(() => {
-                peach.style.bottom = "-35vw"
+                peach.style.bottom = "-60vw"
             }, 2500)
             setTimeout(() => {
                 win.style.bottom = "12vw";
             }, 500)
             setTimeout(() => {
-                win.style.bottom = "-35vw"
+                win.style.bottom = "-60vw"
             }, 2500)
             //------------------Historique
             setTimeout(() => {

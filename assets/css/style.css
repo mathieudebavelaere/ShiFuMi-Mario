@@ -13,7 +13,7 @@ body {
 /*--------------------------------------------*/
 #fondEcran {
     position: relative;
-    height: 720px;
+    height: 100%;
     width: 100%;
     background: url('../img/fondEcran.png');
     background-size: 100% 100%;
@@ -32,11 +32,13 @@ body {
     height: 100px;
     width: 100%;
 }
+
 .perso {
     display: flex;
     justify-content: center;
     color: whitesmoke;
 }
+
 #footer {
     display: flex;
     flex-direction: row;
@@ -105,11 +107,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 10%;
+    margin: 2%;
     width: 100%;
 }
 
 #pierre {
+    cursor: pointer;
     color: #ffffff;
     font-size: 0%;
     height: 100px;
@@ -129,6 +132,7 @@ body {
 }
 
 #feuille {
+    cursor: pointer;
     color: #ffffff;
     font-size: 0%;
     height: 100px;
@@ -148,6 +152,7 @@ body {
 }
 
 #ciseaux {
+    cursor: pointer;
     color: #ffffff;
     font-size: 0%;
     height: 100px;
@@ -175,6 +180,7 @@ body {
 
 .valider,
 .reset {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +258,7 @@ body {
     z-index: 1;
     height: 40vh;
     bottom: -1vw;
-    left: -20vw;
+    left: -60vw;
     /* Centrage horizontal et vertical */
     display: flex;
     align-items: center;
@@ -315,6 +321,7 @@ body {
     transition: bottom 2s;
     border-radius: 5%;
 }
+
 /*--------------------------------------------*/
 .player {
     display: flex;
@@ -323,6 +330,7 @@ body {
     width: 430px;
     height: 20px;
 }
+
 /*--------------------------------------------*/
 #historique {
     display: flex;
@@ -332,30 +340,34 @@ body {
     height: 100px;
     width: 430px;
 }
+
 .boiteH1,
-.boiteH2{
+.boiteH2 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 215px;
     position: relative;
 }
+
 .resultP {
-    opacity: 0%; 
+    opacity: 0%;
     transition: 2s;
     border-radius: 10px;
     position: absolute;
     height: 70%;
 }
+
 .resultF {
-    opacity: 0%; 
+    opacity: 0%;
     transition: 2s;
     border-radius: 10px;
     position: absolute;
     height: 70%;
 }
+
 .resultC {
-    opacity: 0%; 
+    opacity: 0%;
     transition: 2s;
     border-radius: 10px;
     position: absolute;
@@ -363,24 +375,130 @@ body {
 }
 
 .resultP1 {
-    opacity: 0%; 
-    transition: 2s;
-    border-radius: 10px;
-    position: absolute;
-    height: 70%;
-}
-.resultF1 {
-    opacity: 0%; 
-    transition: 2s;
-    border-radius: 10px;
-    position: absolute;
-    height: 70%;
-}
-.resultC1 {
-    opacity: 0%; 
+    opacity: 0%;
     transition: 2s;
     border-radius: 10px;
     position: absolute;
     height: 70%;
 }
 
+.resultF1 {
+    opacity: 0%;
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+
+.resultC1 {
+    opacity: 0%;
+    transition: 2s;
+    border-radius: 10px;
+    position: absolute;
+    height: 70%;
+}
+
+/*----------------------------Tablette---------------------------------*/
+@media screen AND (min-width:769px) AND (max-width:1023px) {
+    #fondEcran {
+       
+        height: 100%;
+        width: 100%;
+        background: url('../img/fondEcran.png');
+        background-size: 100% 100%;
+    }
+    #pierre {
+        color: #ffffff;
+        font-size: 0%;
+        height: 70px;
+        width: 70px;
+        border-radius: 20%;
+        background: url('../img/pierre.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #pierre:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #feuille {
+        color: #ffffff;
+        font-size: 0%;
+        height: 70px;
+        width: 70px;
+        border-radius: 20%;
+        background: url('../img/feuille.png');
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #feuille:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #ciseaux {
+        color: #ffffff;
+        font-size: 0%;
+        height: 70px;
+        width: 70px;
+        border-radius: 20%;
+        background: url('../img/ciseaux.png');
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #ciseaux:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .valider,
+    .reset {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+        height: 50px;
+        width: 150px;
+        font-size: 200%;
+        color: #ffffff;
+        background-color: #4987b0ae;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255) 2px;
+        text-decoration: none;
+    }
+
+    .player {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .playerN {
+        width: 45%;
+    }
+    #historique {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 100px;
+        width: 100%;
+    }
+}
+
+/*----------------------------Mobile---------------------------------*/
+@media screen and (max-width:768px) {}
