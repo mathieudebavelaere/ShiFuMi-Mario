@@ -59,12 +59,14 @@ body {
     justify-content: center;
     color: whitesmoke;
 }
-
+#sound {
+    margin: 10px;
+}
 #footer {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: rgb(255, 255, 255);

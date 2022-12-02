@@ -6,9 +6,18 @@ const validation = document.querySelector('.valider');
 const reset = document.querySelector('.reset');
 
 
+//--------------------Sound-------------------------------
+const ring = () => {
+    const audio = new Audio();
+    audio.scr = "../sound/main.mp3";
+    audio.play();
+};
+
+
+
 //------------------Selections----------------
 pierre.addEventListener('click', () => {
-
+    
     pierre.innerHTML = '0';
     feuille.innerHTML = '';
     ciseaux.innerHTML = '';
@@ -16,6 +25,7 @@ pierre.addEventListener('click', () => {
     pierre.classList.remove('border');
     feuille.classList.remove('borderValide');
     ciseaux.classList.remove('borderValide');
+    ring();
 })
 
 feuille.addEventListener('click', () => {
