@@ -8,13 +8,34 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(28, 128, 199);
+}
+@media only screen and (orientation:portrait) {
+
+    #wrapper {
+        display: block;
+    }
+
+    #avertissement {
+        display: block;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    #avertissement {
+        display: none;
+    }
+    #wrapper {
+
+  background-color: rgb(14, 122, 210);
+    }
 }
 
 /*--------------------------------------------*/
 #fondEcran {
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 1050px;
     background: url('../img/fondEcran.png');
     background-size: 100% 100%;
 }
@@ -400,11 +421,13 @@ body {
 
 /*----------------------------Tablette-------ipad-ipadMini-------------------------*/
 @media screen AND (min-width:769px) AND (max-width:1024px) {
+
     #fondEcran {
         height: 681px;
         background: url('../img/fondEcran.png');
         background-size: 100% 100%;
     }
+
     #nav {
         display: flex;
         align-items: center;
@@ -418,6 +441,7 @@ body {
         height: 100px;
         width: 100%;
     }
+
     #pierre {
         color: #ffffff;
         font-size: 0%;
@@ -498,9 +522,11 @@ body {
         justify-content: space-evenly;
         width: 100%;
     }
+
     .playerN {
         width: 45%;
     }
+
     #historique {
         display: flex;
         justify-content: space-evenly;
@@ -513,14 +539,88 @@ body {
 
 /*----------------------------Mobile---------------------------------*/
 @media screen and (max-width:768px) {
-    #fondEcran {
-        
-        height: 405px;
+    .textMobile {
+        margin: 5%;
+        color: whitesmoke;
+        font-size: 25px;
+    }
+    #flexBoite {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boiteEnter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        z-index: 2;
+        height: 300px;
+        width: 350px;
+border-radius: 15px;
+        border: solid whitesmoke 5px;
+        background-color: rgba(245, 245, 245, 0.313);
+    }
+#rotateMobile {
+    height: 100px;
+    z-index: 1;
+}
+    #fbMobile {
+        position: fixed;
+        height: 875px;
         width: 100%;
+    }
+
+    #stars {
+        margin-top: 40px;
+        z-index: 1;
+        animation: custom-loading 15s linear infinite;
+    }
+
+    @keyframes custom-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #avertissement {
+        display: none;
+    }
+
+    @media only screen and (orientation:portrait) {
+
+        #wrapper {
+            display: none;
+        }
+
+        #avertissement {
+            display: block;
+        }
+    }
+
+    @media only screen and (orientation:landscape) {
+        #avertissement {
+            display: none;
+        }
+        #wrapper {
+      background-color: rgb(14, 122, 210);
+        }
+    }
+
+    #fondEcran {
+
+        height: 405px;
+        width: 720px;
         background: url('../img/fondEcran.png');
         background-size: 100% 100%;
     }
-    
+
     #nav {
         display: flex;
         align-items: center;
@@ -534,9 +634,10 @@ body {
         width: 100%;
     }
 
-.titleName {
-height: 100px;
-}
+    .titleName {
+        height: 100px;
+    }
+
     #pierre {
         color: #ffffff;
         font-size: 0%;
@@ -610,15 +711,18 @@ height: 100px;
         border: solid rgb(255, 255, 255) 2px;
         text-decoration: none;
     }
+
     .player {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         width: 95%;
     }
+
     .playerN {
         width: 45%;
     }
+
     #historique {
         display: flex;
         justify-content: space-evenly;
@@ -627,6 +731,7 @@ height: 100px;
         height: 80px;
         width: 100%;
     }
+
     .score {
         display: flex;
         align-items: center;
@@ -640,12 +745,10 @@ height: 100px;
         border-radius: 5px;
         border: solid rgb(255, 255, 255) 2px;
     }
-    
+
     #cloud {
         height: 150%;
     }
 
 
 }
-
-
