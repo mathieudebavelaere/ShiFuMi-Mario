@@ -5,12 +5,6 @@ const ciseaux = document.getElementById('ciseaux');
 const validation = document.querySelector('.valider');
 const reset = document.querySelector('.reset');
 
-console.log(pierre);
-console.log(feuille);
-console.log(ciseaux);
-console.log(validation);
-console.log(reset);
-console.log('--------------------');
 
 //------------------Selections----------------
 pierre.addEventListener('click', () => {
@@ -25,6 +19,7 @@ pierre.addEventListener('click', () => {
 })
 
 feuille.addEventListener('click', () => {
+
     feuille.innerHTML = '1';
     pierre.innerHTML = '';
     ciseaux.innerHTML = '';
@@ -47,7 +42,6 @@ ciseaux.addEventListener('click', () => {
 
 //---------------------Historique-------------------------------
 let historique = document.getElementById('historique');
-console.log(historique);
 
 let resultP = document.querySelector('.resultP');
 let resultF = document.querySelector('.resultF');
@@ -77,12 +71,6 @@ let koopa = document.getElementById('koopa');
 
 validation.addEventListener('click', () => {
     let computer = Math.floor(Math.random() * 3); // 0, 1 or 2
-
-    console.log(computer);
-    console.log(pierre.innerText);
-    console.log(feuille.innerText);
-    console.log(ciseaux.innerText);
-
     //pierre--------------------------
 
     if (pierre.innerText) {

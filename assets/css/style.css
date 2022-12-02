@@ -398,14 +398,25 @@ body {
     height: 70%;
 }
 
-/*----------------------------Tablette---------------------------------*/
-@media screen AND (min-width:769px) AND (max-width:1023px) {
+/*----------------------------Tablette-------ipad-ipadMini-------------------------*/
+@media screen AND (min-width:769px) AND (max-width:1024px) {
     #fondEcran {
-       
-        height: 100%;
-        width: 100%;
+        height: 681px;
         background: url('../img/fondEcran.png');
         background-size: 100% 100%;
+    }
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(245, 245, 245, 0);
+        -webkit-text-stroke: 3px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        height: 100px;
+        width: 100%;
     }
     #pierre {
         color: #ffffff;
@@ -501,4 +512,138 @@ body {
 }
 
 /*----------------------------Mobile---------------------------------*/
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    #fondEcran {
+        
+        height: 405px;
+        width: 100%;
+        background: url('../img/fondEcran.png');
+        background-size: 100% 100%;
+    }
+    
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(245, 245, 245, 0);
+        -webkit-text-stroke: 3px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        height: 50px;
+        width: 100%;
+    }
+
+.titleName {
+height: 100px;
+}
+    #pierre {
+        color: #ffffff;
+        font-size: 0%;
+        height: 50px;
+        width: 50px;
+        border-radius: 20%;
+        background: url('../img/pierre.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #pierre:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #feuille {
+        color: #ffffff;
+        font-size: 0%;
+        height: 50px;
+        width: 50px;
+        border-radius: 20%;
+        background: url('../img/feuille.png');
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #feuille:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #ciseaux {
+        color: #ffffff;
+        font-size: 0%;
+        height: 50px;
+        width: 50px;
+        border-radius: 20%;
+        background: url('../img/ciseaux.png');
+        background-size: 100% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+    #ciseaux:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .valider,
+    .reset {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+        height: 35px;
+        width: 140px;
+        font-size: 150%;
+        color: #ffffff;
+        background-color: #4987b0ae;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255) 2px;
+        text-decoration: none;
+    }
+    .player {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95%;
+    }
+    .playerN {
+        width: 45%;
+    }
+    #historique {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 80px;
+        width: 100%;
+    }
+    .score {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2%;
+        height: 30px;
+        width: 50%;
+        font-size: 200%;
+        color: #ffffff;
+        background-color: #4987b0ae;
+        border-radius: 5px;
+        border: solid rgb(255, 255, 255) 2px;
+    }
+    
+    #cloud {
+        height: 150%;
+    }
+
+
+}
