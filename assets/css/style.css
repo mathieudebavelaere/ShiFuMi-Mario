@@ -421,7 +421,79 @@ body {
 
 /*----------------------------Tablette-------ipad-ipadMini-------------------------*/
 @media screen AND (min-width:769px) AND (max-width:1024px) {
+    .textMobile {
+        margin: 5%;
+        color: whitesmoke;
+        font-size: 25px;
+    }
+    #flexBoite {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boiteEnter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        z-index: 2;
+        height: 300px;
+        width: 350px;
+border-radius: 15px;
+        border: solid whitesmoke 5px;
+        background-color: rgba(245, 245, 245, 0.313);
+    }
+#rotateMobile {
+    height: 100px;
+    z-index: 1;
+}
+    #fbMobile {
+        position: fixed;
+        height: 875px;
+        width: 100%;
+    }
 
+    #stars {
+        margin-top: 40px;
+        z-index: 1;
+        animation: custom-loading 15s linear infinite;
+    }
+
+    @keyframes custom-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #avertissement {
+        display: none;
+    }
+
+    @media only screen and (orientation:portrait) {
+
+        #wrapper {
+            display: none;
+        }
+
+        #avertissement {
+            display: block;
+        }
+    }
+
+    @media only screen and (orientation:landscape) {
+        #avertissement {
+            display: none;
+        }
+        #wrapper {
+      background-color: rgb(14, 122, 210);
+        }
+    }
     #fondEcran {
         height: 681px;
         background: url('../img/fondEcran.png');
