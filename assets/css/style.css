@@ -53,11 +53,32 @@ body {
     height: 100px;
     width: 100%;
 }
-
+.boxLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .perso {
     display: flex;
     justify-content: center;
     color: whitesmoke;
+    margin-left: 2%;
+}
+.iconlink {
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/linkedin.png');
+    background-size: 100%;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+.iconlink:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    border-radius: 5px;
+    box-shadow: whitesmoke 0px 0px 5px;
 }
 #sound {
     margin: 10px;
